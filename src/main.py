@@ -28,7 +28,7 @@ def gerar_tabelas_comparativas(df_tratado: pd.DataFrame, df_indicadores: pd.Data
 
 def executar_fluxo(atualizar: bool = False) -> None:
     caminhos = baixar_todos_os_dados(atualizar=atualizar)
-    df_tratado = tratar_todos_os_dados(caminhos["2022"])
+    df_tratado = tratar_todos_os_dados(caminhos["2010"], caminhos["2022"])
 
     df_indicadores = calcular_indicadores_por_ano(df_tratado)
     salvar_indicadores(df_indicadores)
@@ -36,9 +36,10 @@ def executar_fluxo(atualizar: bool = False) -> None:
 
     df_razao = calcular_razao_sexo_por_grupo_etario(df_tratado)
 
+    gerar_piramide_etaria(df_tratado, 2010, "piramide_etaria_df_2010.png")
     gerar_piramide_etaria(df_tratado, 2022, "piramide_etaria_df_2022.png")
-    gerar_distribuicao_percentual(df_tratado, "distribuicao_percentual_grupos_etarios_2022.png")
-    gerar_barra_jovens_adultos_idosos(df_indicadores, "jovens_adultos_idosos_2022.png")
+    gerar_distribuicao_percentual(df_tratado, "distribuicao_percentual_grupos_etarios_2010_2022.png")
+    gerar_barra_jovens_adultos_idosos(df_indicadores, "jovens_adultos_idosos_2010_2022.png")
     gerar_razao_sexo_por_grupo_etario(df_razao, "razao_sexo_por_grupo_etario.png")
 
 

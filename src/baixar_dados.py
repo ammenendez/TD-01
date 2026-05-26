@@ -82,21 +82,31 @@ def baixar_dados_2022(atualizar: bool = False) -> Path:
 
 def baixar_dados_2010(atualizar: bool = False) -> Path:
     """
-    Baixa os dados do Censo 2010 para o Distrito Federal usando a tabela 3107.
+    Baixa os dados do Censo 2010 para o Distrito Federal.
 
-    Temporariamente deixado em espera enquanto validamos o fluxo de 2022.
+    A consulta é separada da de 2022 para manter os tratamentos distintos.
     """
     caminho = PASTA_BRUTOS / "populacao_df_2010.csv"
     if arquivo_bruto_tem_detalhamento(caminho) and not atualizar:
         return caminho
 
-    raise RuntimeError(
-        "A etapa de 2010 está temporariamente comentada enquanto validamos o download de 2022."
+    url_2010_df = (
+        "https://apisidra.ibge.gov.br/values/"
+        "t/3107"
+        "/n3/53"
+        "/v/allxp"
+        "/p/all"
+        "/c1/0"
+        "/c2/allxt"
+        "/c58/0,1140,1141,1142,1143,1144,1145,1146,1147,1148,1149,1150,1151,1152,1153,1154,1155,6802,6803,92963,92964,92965"
     )
+    chamar_sidra_api(url_2010_df, salvar_em=str(caminho))
+    return caminho
 
 
 def baixar_todos_os_dados(atualizar: bool = False) -> dict[str, Path]:
     """Baixa os arquivos brutos de 2010 e 2022."""
     return {
+        "2010": baixar_dados_2010(atualizar=atualizar),
         "2022": baixar_dados_2022(atualizar=atualizar),
     }

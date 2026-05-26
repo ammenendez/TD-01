@@ -142,6 +142,40 @@ def tratar_dados_2022(caminho_bruto: Path) -> pd.DataFrame:
     return tratar_arquivo_bruto(caminho_bruto, 2022)
 
 
+def tratar_dados_2010(caminho_bruto: Path) -> pd.DataFrame:
+    df = pd.read_csv(caminho_bruto, dtype=str)
+
+    coluna_uf = next((col for col in df.columns if "Unidade da Federação" in col and "(Código)" not in col), None)
+    coluna_sexo = next((col for col in df.columns if col == "Sexo"), None)
+    coluna_idade = next((col for col in df.columns if "Grupo de idade" in col and "(Código)" not in col), None)
+    coluna_valor = next((col for col in df.columns if col == "Valor"), None)
+    coluna_situacao = next((col for col in df.columns if "Situação do domicílio" in col and "(Código)" not in col), None)
+
+    if not all([coluna_uf, coluna_sexo, coluna_idade, coluna_valor, coluna_situacao]):
+        raise ValueError("Não foi possível identificar as colunas esperadas no CSV de 2010.")
+
+    df = df[df[coluna_situacao].eq("Total")].copy()
+    df = df[df[coluna_sexo].isin(["Homens", "Mulheres"])].copy()
+    df = df[df[coluna_idade].ne("Total")].copy()
+    df["grupo_etario"] = df[coluna_idade].map(_faixa_para_grupo_etario)
+    df = df[df["grupo_etario"].notna()].copy()
+
+    df["sexo"] = df[coluna_sexo].map({"Homens": "Masculino", "Mulheres": "Feminino"})
+    df["populacao"] = pd.to_numeric(df[coluna_valor], errors="coerce").fillna(0).astype(int)
+    df["idade"] = df[coluna_idade].map(_faixa_para_idade_inicial)
+    df["ano"] = 2010
+    df["uf"] = df[coluna_uf].fillna("Distrito Federal")
+    df["codigo_uf"] = 53
+
+    registros = df[["ano", "uf", "codigo_uf", "sexo", "idade", "grupo_etario", "populacao"]].copy()
+    registros = registros.dropna(subset=["idade"]).copy()
+    registros["idade"] = registros["idade"].astype(int)
+
+    if registros.empty:
+        raise ValueError("A base tratada de 2010 ficou vazia ao processar o arquivo bruto exportado.")
+    return registros.sort_values(["sexo", "idade"]).reset_index(drop=True)
+
+
 def salvar_dados_tratados(df: pd.DataFrame, nome_arquivo: str) -> Path:
     garantir_pasta_tratados()
     caminho = PASTA_TRATADOS / nome_arquivo
@@ -149,7 +183,11 @@ def salvar_dados_tratados(df: pd.DataFrame, nome_arquivo: str) -> Path:
     return caminho
 
 
-def tratar_todos_os_dados(caminho_2022: Path) -> pd.DataFrame:
+def tratar_todos_os_dados(caminho_2010: Path, caminho_2022: Path) -> pd.DataFrame:
+    df_2010 = tratar_dados_2010(caminho_2010)
     df_2022 = tratar_dados_2022(caminho_2022)
+    salvar_dados_tratados(df_2010, "populacao_df_2010_tratada.csv")
     salvar_dados_tratados(df_2022, "populacao_df_2022_tratada.csv")
-    return df_2022
+    consolidado = pd.concat([df_2010, df_2022], ignore_index=True)
+    salvar_dados_tratados(consolidado, "populacao_df_2010_2022_tratada.csv")
+    return consolidado
