@@ -2,10 +2,13 @@
 __pycache__/
 *.pyc
 dados/brutos/*.csv
+!dados/brutos/.gitkeep
 dados/tratados/*.csv
+!dados/tratados/.gitkeep
 graficos/*.png
 graficos/*.pdf
 graficos/*.svg
+!graficos/.gitkeep
 .aux
 .bbl
 .bcf
