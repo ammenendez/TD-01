@@ -97,9 +97,15 @@ def gerar_barra_jovens_adultos_idosos(df_indicadores: pd.DataFrame, nome_arquivo
 def gerar_razao_sexo_por_grupo_etario(df: pd.DataFrame, nome_arquivo: str) -> Path:
     garantir_pasta_graficos()
     dados = df.copy()
+    ordem = [
+        "0-4", "5-9", "10-14", "15-19", "20-24", "25-29", "30-34", "35-39",
+        "40-44", "45-49", "50-54", "55-59", "60-64", "65-69", "70-74", "75-79", "80+",
+    ]
     fig, ax = plt.subplots(figsize=(12, 6))
     for ano in sorted(dados["ano"].unique()):
-        sub = dados[dados["ano"] == ano].sort_values("grupo_etario")
+        sub = dados[dados["ano"] == ano].copy()
+        sub["grupo_etario"] = pd.Categorical(sub["grupo_etario"], categories=ordem, ordered=True)
+        sub = sub.sort_values("grupo_etario")
         ax.plot(sub["grupo_etario"], sub["razao_sexo"], marker="o", label=str(ano))
     ax.set_title("Razão de sexo por grupo etário")
     ax.set_xlabel("Grupo etário")

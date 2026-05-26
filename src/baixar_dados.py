@@ -83,8 +83,6 @@ def baixar_dados_2022(atualizar: bool = False) -> Path:
 def baixar_dados_2010(atualizar: bool = False) -> Path:
     """
     Baixa os dados do Censo 2010 para o Distrito Federal.
-
-    A consulta é separada da de 2022 para manter os tratamentos distintos.
     """
     caminho = PASTA_BRUTOS / "populacao_df_2010.csv"
     if arquivo_bruto_tem_detalhamento(caminho) and not atualizar:

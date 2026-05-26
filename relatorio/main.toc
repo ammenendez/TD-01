@@ -1,0 +1,15 @@
+\babel@toc {brazil}{}\relax 
+\contentsline {section}{\numberline {1}INTRODUÇÃO}{5}{section.1}%
+\contentsline {section}{\numberline {2}METODOLOGIA}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Obtenção dos dados}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Tratamento e padronização}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Indicadores demográficos}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Visualizações gráficas}{7}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Fluxo de execução}{8}{subsection.2.5}%
+\contentsline {section}{\numberline {3}RESULTADOS}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Evolução da população total e da composição por sexo}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Estrutura etária e envelhecimento}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Pirâmides etárias}{10}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Distribuição percentual por grupos etários}{10}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Razão de sexo por grupo etário}{12}{subsection.3.5}%
+\contentsline {section}{\numberline {4}CONSIDERAÇÕES FINAIS}{13}{section.4}%
