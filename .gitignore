@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+dados/brutos/*.csv
+dados/tratados/*.csv
+graficos/*.png
+graficos/*.pdf
+graficos/*.svg
+.DS_Store
