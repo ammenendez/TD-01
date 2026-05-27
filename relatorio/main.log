@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.4)  26 MAY 2026 17:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.4)  26 MAY 2026 17:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1163,46 +1163,46 @@ Overfull \hbox (9.29541pt too wide) in paragraph at lines 360--365
 
 [7]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 403.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 405.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 403.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 405.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 403.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 405.
 
 
 [8]
 
 [9]
-<../graficos/piramide_etaria_df_2010.png, id=158, 713.7867pt x 575.5101pt>
+<../graficos/piramide_etaria_df_2010.png, id=159, 713.7867pt x 575.5101pt>
 File: ../graficos/piramide_etaria_df_2010.png Graphic file (type png)
 <use ../graficos/piramide_etaria_df_2010.png>
-Package pdftex.def Info: ../graficos/piramide_etaria_df_2010.png  used on input line 476.
+Package pdftex.def Info: ../graficos/piramide_etaria_df_2010.png  used on input line 478.
 (pdftex.def)             Requested size: 388.09775pt x 312.91353pt.
-<../graficos/piramide_etaria_df_2022.png, id=159, 715.2321pt x 575.5101pt>
+<../graficos/piramide_etaria_df_2022.png, id=160, 715.2321pt x 575.5101pt>
 File: ../graficos/piramide_etaria_df_2022.png Graphic file (type png)
 <use ../graficos/piramide_etaria_df_2022.png>
-Package pdftex.def Info: ../graficos/piramide_etaria_df_2022.png  used on input line 483.
+Package pdftex.def Info: ../graficos/piramide_etaria_df_2022.png  used on input line 485.
 (pdftex.def)             Requested size: 388.09775pt x 312.28125pt.
 
 
 [10 <../graficos/piramide_etaria_df_2010.png>]
-<../graficos/distribuicao_percentual_grupos_etarios_2010_2022.png, id=167, 859.5312pt x 425.9112pt>
+<../graficos/distribuicao_percentual_grupos_etarios_2010_2022.png, id=168, 859.5312pt x 425.9112pt>
 File: ../graficos/distribuicao_percentual_grupos_etarios_2010_2022.png Graphic file (type png)
 <use ../graficos/distribuicao_percentual_grupos_etarios_2010_2022.png>
-Package pdftex.def Info: ../graficos/distribuicao_percentual_grupos_etarios_2010_2022.png  used on input line 497.
+Package pdftex.def Info: ../graficos/distribuicao_percentual_grupos_etarios_2010_2022.png  used on input line 499.
 (pdftex.def)             Requested size: 388.09775pt x 192.31464pt.
-<../graficos/jovens_adultos_idosos_2010_2022.png, id=168, 714.9912pt x 426.1521pt>
+<../graficos/jovens_adultos_idosos_2010_2022.png, id=169, 714.9912pt x 426.1521pt>
 File: ../graficos/jovens_adultos_idosos_2010_2022.png Graphic file (type png)
 <use ../graficos/jovens_adultos_idosos_2010_2022.png>
-Package pdftex.def Info: ../graficos/jovens_adultos_idosos_2010_2022.png  used on input line 504.
+Package pdftex.def Info: ../graficos/jovens_adultos_idosos_2010_2022.png  used on input line 506.
 (pdftex.def)             Requested size: 388.09775pt x 231.32167pt.
 
 
 [11 <../graficos/piramide_etaria_df_2022.png> <../graficos/distribuicao_percentual_grupos_etarios_2010_2022.png>]
-<../graficos/razao_sexo_por_grupo_etario.png, id=176, 859.5312pt x 425.9112pt>
+<../graficos/razao_sexo_por_grupo_etario.png, id=177, 859.5312pt x 425.9112pt>
 File: ../graficos/razao_sexo_por_grupo_etario.png Graphic file (type png)
 <use ../graficos/razao_sexo_por_grupo_etario.png>
-Package pdftex.def Info: ../graficos/razao_sexo_por_grupo_etario.png  used on input line 526.
+Package pdftex.def Info: ../graficos/razao_sexo_por_grupo_etario.png  used on input line 528.
 (pdftex.def)             Requested size: 405.7355pt x 201.04913pt.
 
 
@@ -1232,10 +1232,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  110i,9n,107p,1146b,483s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (15 pages, 946235 bytes).
+Output written on main.pdf (15 pages, 946450 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 192 compressed objects within 2 object streams
+ 240 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
  40 named destinations out of 1000 (max. 500000)
  69280 words of extra memory for PDF output out of 74296 (max. 10000000)
 

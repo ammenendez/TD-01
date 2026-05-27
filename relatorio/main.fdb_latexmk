@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex main"] 1779827615.36366 "main.aux" "main.bbl" "main" 1779827670.80251 0
+["bibtex main"] 1779827615.36366 "main.aux" "main.bbl" "main" 1779828434.30075 0
   "./references.bib" 1779827248.94395 791 b529ad98c3d86f34e2c96a54c9e7859c ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bib/abntex2/abntex2-options.bib" 1357081713 5396 4eb260dac60f150ae608d45252853090 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/abntex2/abntex2-alf.bst" 1543183680 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "main.aux" 1779827670.48962 4735 e23590f50f23d6c0fbbac34979c16552 "pdflatex"
+  "main.aux" 1779828433.99656 4735 e23590f50f23d6c0fbbac34979c16552 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1779827668.57335 "/Users/andres/Library/CloudStorage/OneDrive-Pessoal/Dinter/Semestres/primeiro semestre/Técnicas demográficas/trabalhos/trabalho1/relatorio/main.tex" "main.pdf" "main" 1779827670.80266 0
+["pdflatex"] 1779828431.99746 "/Users/andres/Library/CloudStorage/OneDrive-Pessoal/Dinter/Semestres/primeiro semestre/Técnicas demográficas/trabalhos/trabalho1/relatorio/main.tex" "main.pdf" "main" 1779828434.30089 0
   "../graficos/distribuicao_percentual_grupos_etarios_2010_2022.png" 1779824238.95719 249186 5f9ed6f8841aa4c0b3e04875f1e5f36d ""
   "../graficos/jovens_adultos_idosos_2010_2022.png" 1779824239.02731 76746 b2cac4fda5b4eee0fe1ee35a248a5eb9 ""
   "../graficos/piramide_etaria_df_2010.png" 1779824238.72341 136386 347b5cd0a0bdb3c80ea8f0f70e648c5b ""
   "../graficos/piramide_etaria_df_2022.png" 1779824238.83832 135047 a6ebb502e26067b23ef645b333f98105 ""
   "../graficos/razao_sexo_por_grupo_etario.png" 1779824239.14217 226824 c076feaf9ba83981d8144bd0fdc579e4 ""
-  "/Users/andres/Library/CloudStorage/OneDrive-Pessoal/Dinter/Semestres/primeiro semestre/Técnicas demográficas/trabalhos/trabalho1/relatorio/main.tex" 1779827664.99759 21558 3a45b04ba63c4f64008b860f07d2a8eb ""
+  "/Users/andres/Library/CloudStorage/OneDrive-Pessoal/Dinter/Semestres/primeiro semestre/Técnicas demográficas/trabalhos/trabalho1/relatorio/main.tex" 1779828416.24699 21742 1672abf39566c2a5e9ff2c9a12c9ddc5 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -261,13 +261,13 @@
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "figuras/logo_ppgdem.png" 1775415734.11405 30848 c6f932075c1186901e588da75b51cf32 ""
   "figuras/logo_ufs.png" 1775415697.25135 13524 0d825553f86086d14df9272a06c93015 ""
-  "main.aux" 1779827670.48962 4735 e23590f50f23d6c0fbbac34979c16552 "pdflatex"
+  "main.aux" 1779828433.99656 4735 e23590f50f23d6c0fbbac34979c16552 "pdflatex"
   "main.bbl" 1779827615.44584 880 259f8107120917aa4c06959a5f08f7c0 "bibtex main"
-  "main.lof" 1779827670.49095 753 f64d047c3a56a83dbeda55bbbbe110cc "pdflatex"
-  "main.lot" 1779827670.49097 164 1483018fa4928637525832032d743baa "pdflatex"
-  "main.out" 1779827670.49074 2576 9b82ffc3242022f5150e7c91eba85224 "pdflatex"
-  "main.tex" 1779827664.99759 21558 3a45b04ba63c4f64008b860f07d2a8eb ""
-  "main.toc" 1779827670.49092 1276 98aaa6ccfe4f54b14b3be8740c7938ff "pdflatex"
+  "main.lof" 1779828433.99788 753 f64d047c3a56a83dbeda55bbbbe110cc "pdflatex"
+  "main.lot" 1779828433.99791 164 1483018fa4928637525832032d743baa "pdflatex"
+  "main.out" 1779828433.99766 2576 9b82ffc3242022f5150e7c91eba85224 "pdflatex"
+  "main.tex" 1779828416.24699 21742 1672abf39566c2a5e9ff2c9a12c9ddc5 ""
+  "main.toc" 1779828433.99785 1276 98aaa6ccfe4f54b14b3be8740c7938ff "pdflatex"
   (generated)
   "main.aux"
   "main.lof"
